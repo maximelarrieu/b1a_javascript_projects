@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="my-style" href="style.css">
     <title>DOM</title>
   </head>
   <body>
@@ -16,6 +18,11 @@
       <h2>Article title</h2>
       <p>Article content</p>
     </article>
+
+    <div id="js-alert" class="alert">
+      <p>Very important message</p>
+    </div>
+    <button id="js-btn" class="btn btn-secondary">Change alert state</button>
     
     <input type="text" id="js-search" placeholder="Search something..." value="Poodles">
     
@@ -71,7 +78,12 @@
       
       <div id="js-search-result"></div>
     </div>
-    
+
+    <div class="alert alert-danger" id="js-danger-alert">
+      <p>My alert</p>
+      <button class="btn btn-success" id="js-danger-alert-btn">Ok</button>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
   </body>
