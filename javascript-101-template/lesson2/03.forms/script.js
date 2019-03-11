@@ -14,7 +14,7 @@ window.addEventListener('contextmenu', (event) => {
 let isClickedTwice = false;
 const greyButton = document.querySelector('#js-grey-button');
 greyButton.addEventListener('click', () => {
-    isClickedTwice = !isClickedTwice;
+    isClickedTwice =! isClickedTwice;
     if (isClickedTwice) {
 	greyButton.style.backgroundColor = 'green';
     } else {

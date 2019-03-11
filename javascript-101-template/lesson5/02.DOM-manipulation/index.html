@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="my-style" href="style.css">
-    <title>DOM</title>
-  </head>
-  <body>
-    <div>First paragraph</div>
-    <div class="js-paragraph">Second paragraph</div>
-    <div class="js-paragraph">Third paragraph</div>
-    <div id="js-unique-paragraph">Fourth paragraph</div>
 
-    <h1>Some title</h1>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>DOM</title>
+</head>
 
-    <article id="js-article">
-      <h2>Article title</h2>
-      <p>Article content</p>
-    </article>
+<body>
+  <div>First paragraph</div>
+  <div class="js-paragraph">Second paragraph</div>
+  <div class="js-paragraph">Third paragraph</div>
+  <div id="js-unique-paragraph">Fourth paragraph</div>
 
-    <div id="js-alert" class="alert">
-      <p>Very important message</p>
-    </div>
-    <button id="js-btn" class="btn btn-secondary">Change alert state</button>
-    
-    <input type="text" id="js-search" placeholder="Search something..." value="Poodles">
-    
-    <article>
-      <h1>Title</h1>
-      <h2>Another title</h2>
-      <h3>Small title 1</h3>
-      <h3>Small title 2</h3>
-      <h3>Small title 3</h3>
-      <a href="https://example.com" target="_blank">External article link</a>
-      <a href="https://my-website.com">Internal article link</a>
-    </article>
-    
-    <table>
-      <tr>
-	<th>Firstname</th>
-	<th>Lastname</th> 
-	<th>Age</th>
-      </tr>
-      <tr>
-	<td>Anne</td>
-	<td>Smith</td> 
-	<td>18</td>
-      </tr>
-      <tr>
-	<td>Michel</td>
-	<td>Erikson</td> 
-	<td>19</td>
-      </tr>
-    </table>
-    
-    <form>
-      <input type="text" placeholder="My input">
-      <input type="button" value="My button">
+  <h1>Some title</h1>
+
+  <article id="js-article">
+    <h2>Article title</h2>
+    <p>Article content</p>
+  </article>
+
+  <div id="js-alert" class="alert">
+    <p>Very important message</p>
+  </div>
+  <button id="js-btn" class="btn btn-secondary">Change alert state</button>
+
+  <input type="text" id="js-search" placeholder="Search something..." value="Poodles">
+
+  <article>
+    <h1>Title</h1>
+    <h2>Another title</h2>
+    <h3>Small title 1</h3>
+    <h3>Small title 2</h3>
+    <h3>Small title 3</h3>
+    <a href="https://example.com" target="_blank">External article link</a>
+    <a href="https://my-website.com">Internal article link</a>
+  </article>
+
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Anne</td>
+      <td>Smith</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Michel</td>
+      <td>Erikson</td>
+      <td>19</td>
+    </tr>
+  </table>
+
+  <form>
+    <input type="text" placeholder="My input">
+    <input type="button" value="My button">
+  </form>
+
+  <div class="container">
+    <form class="form-row" id="js-search-form">
+
+      <div class="col-auto">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Search</div>
+          </div>
+          <input type="text" class="form-control" id="js-searchs" placeholder="Recherche">
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <button class="btn btn-primary" type="submit">Rechercher</button>
+      </div>
     </form>
 
-    <div class="container">
-      <form class="form-row" id="js-search-form">
-	
-	<div class="col-auto">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">Search</div>
-            </div>
-            <input type="text" class="form-control" id="js-searchs" placeholder="Recherche">
-          </div>
-	</div>
-	
-	<div class="col-auto">
-          <button class="btn btn-primary" type="submit">Rechercher</button>
-	</div>
-      </form>
-      
-      <div id="js-search-result"></div>
-    </div>
+    <div id="js-search-result"></div>
+  </div>
 
-    <div class="alert alert-danger" id="js-danger-alert">
-      <p>My alert</p>
-      <button class="btn btn-success" id="js-danger-alert-btn">Ok</button>
-    </div>
+  <div class="alert alert-danger" id="js-danger-alert">
+    <p>My alert</p>
+    <button class="btn btn-success" id="js-danger-alert-btn">Ok</button>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

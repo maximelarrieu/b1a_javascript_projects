@@ -11,7 +11,7 @@ $('h1').text('My page title');
 const articleContent = $('#js-artcile').html();
 console.log('articleContent', articleContent);
 
-// Changer le contenu de l'article à 
+// Changer le contenu de l'article à
 $('#js-article').html(`
 <h2>This is my article.</h2>
 <p>This is my article's content.</p>
@@ -43,7 +43,7 @@ $('#js-search-form')[0].addEventListener('submit', () => {
 // Ajoutez la classe 'alert-primary' au <div>
 $('#js-alert').addClass('alert-primary');
 
-// Supprimez la classe 'alert-primary' du <div>. Supprimez 
+// Supprimez la classe 'alert-primary' du <div>. Supprimez
 $('#js-alert').removeClass('alert-primary');
 
 // Ajoutez d'un coup les classes 'alert' et 'alert-warning' au <div>
@@ -81,4 +81,3 @@ $('#js-danger-alert')[0].addEventListener('click', () => {
 	display: 'none'
     });
 });
-
